@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend Developer Portfolio">
+  <title>My Portfolio | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">Dev<span>Portfolio.</span></a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+
+    <nav class="navbar" id="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">☀️</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="greeting">Hello, I'm</p>
+        <h1>Omrita kumari</h1>
+        <h2>I'm a <span id="typing"></span><span class="cursor">|</span></h2>
+        <p class="hero-description">
+          I build responsive, attractive and user-friendly websites
+          using HTML, CSS and JavaScript.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-circle">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80"
+            alt="Portfolio profile placeholder">
+        </div>
+        <div class="floating-card">💻 Frontend Developer</div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <p class="section-label">GET TO KNOW ME</p>
+      <h2 class="section-title">About <span>Me</span></h2>
+
+      <div class="about-content">
+        <div class="about-box">
+          <h3>Who am I?</h3>
+          <p>
+            I'm a Computer Science student passionate about web development
+            and modern user interfaces. I enjoy turning ideas into functional,
+            responsive websites and continuously improving my coding skills.
+          </p>
+          <p>
+            My current focus is JavaScript, responsive design, DOM manipulation,
+            Git and building real-world projects for internship opportunities.
+          </p>
+          <a href="#contact" class="btn">Let's Connect</a>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <h3>03+</h3>
+            <p>Projects Built</p>
+          </div>
+          <div class="stat-card">
+            <h3>05+</h3>
+            <p>Technologies</p>
+          </div>
+          <div class="stat-card">
+            <h3>100%</h3>
+            <p>Learning Mindset</p>
+          </div>
+          <div class="stat-card">
+            <h3>24/7</h3>
+            <p>Curiosity</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <p class="section-label">WHAT I KNOW</p>
+      <h2 class="section-title">My <span>Skills</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-heading"><span>HTML5</span><span>90%</span></div>
+          <div class="progress"><span style="--level:90%"></span></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-heading"><span>CSS3</span><span>85%</span></div>
+          <div class="progress"><span style="--level:85%"></span></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-heading"><span>JavaScript</span><span>70%</span></div>
+          <div class="progress"><span style="--level:70%"></span></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-heading"><span>Responsive Design</span><span>80%</span></div>
+          <div class="progress"><span style="--level:80%"></span></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-heading"><span>Git & GitHub</span><span>60%</span></div>
+          <div class="progress"><span style="--level:60%"></span></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-heading"><span>React.js</span><span>Learning</span></div>
+          <div class="progress"><span style="--level:25%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <p class="section-label">MY RECENT WORK</p>
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="js">JavaScript</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-category="web">
+          <div class="project-visual visual-one">🌐</div>
+          <div class="project-info">
+            <span class="project-tag">HTML • CSS</span>
+            <h3>Personal Portfolio</h3>
+            <p>A responsive portfolio website with modern styling.</p>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub Code ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="js">
+          <div class="project-visual visual-two">✅</div>
+          <div class="project-info">
+            <span class="project-tag">JavaScript</span>
+            <h3>Task Manager</h3>
+            <p>Manage daily tasks with add, delete and completion features.</p>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub Code ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="js">
+          <div class="project-visual visual-three">🌦️</div>
+          <div class="project-info">
+            <span class="project-tag">JavaScript • API</span>
+            <h3>Weather App</h3>
+            <p>Display weather information using a weather API.</p>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub Code ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <p class="section-label">LET'S WORK TOGETHER</p>
+      <h2 class="section-title">Contact <span>Me</span></h2>
+      <p class="contact-intro">Have an opportunity or project in mind? Send me a message.</p>
+
+      <form id="contactForm" class="contact-form">
+        <div class="form-row">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+        </div>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message ↗</button>
+        <p id="formMessage" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">Dev<span>Portfolio.</span></a>
+    <p>Designed & built with ❤️ using HTML, CSS and JavaScript.</p>
+    <p>© <span id="year"></span> Omrita kumari . All rights reserved.</p>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
